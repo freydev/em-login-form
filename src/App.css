@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind utilities;
+
+html, body {
+  --primary-color: hsl(214, 80%, 54%);
+  --primary-border-color: hsl(213, 78%, 53%);
+  --secondary-color: hsl(234, 96%, 67%);
+  --secondary-border-color: hsl(234, 100%, 66%);
+  --text-light: hsl(0, 0%, 98%);
+  --text-dark: hsl(0, 0%, 12%);
+  --border-radius: 8px;
+  --default-bg: hsl(0, 0%, 95%);
+
+  color: var(--text-dark);
+  font-family: Inter, 'sans-serif';
+  font-size: 18px;
+  background: hsl(203, 20%, 84%);
+}
+
+.button-disabled {
+  opacity: .8;
+  pointer-events: none;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
