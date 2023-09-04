@@ -52,7 +52,7 @@ export function Login() {
             setLoading(true);
             const response = await fetch('/login', {method: 'POST', body: JSON.stringify(body)});
             if (response.ok) {
-                notify('success', 'Login succesfully');
+                notify('success', 'Login successful');
             } else {
                 setErrors((await response.json()).details)
             }
